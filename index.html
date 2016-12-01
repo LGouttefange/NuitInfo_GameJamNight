@@ -5,14 +5,13 @@
     <script src="sorcery.js" type="application/javascript"></script>
     <link type="text/css" rel="stylesheet" href="style.css"/>
     <meta lang="fr" xml:lang="fr" content="text/html;charset=UTF-8" http-equiv="Content-Type">
-    <title>Sword & Sorcery</title>
+    <title>Refugy Story</title>
 </head>
 
 <body>
+<div id="background-image"></div>
 <div id="status">
-    <div class="life">
-        Life : <span class="value">--</span>
-    </div>
+
 </div>
 
 <div class="section" id="intro">
@@ -30,6 +29,9 @@
 
     <action name="start"></action>
 
+    <div class="img_src">
+        tree.jpg
+    </div>
     <button go="cavern">Se relever</button>
 </div>
 
@@ -38,6 +40,9 @@
     Vous êtes dans une caverne sombre. La seule issue semble être
     une porte à quelques mètres de là.
 
+    <div class="img_src">
+        tree.jpg
+    </div>
     <button go="doorLocked">Sortir</button>
     <button go="wait">Attendre</button>
     <button go="examine">Examiner le sol</button>
@@ -101,7 +106,6 @@
     Vous êtes mort(e) ! C'est balot.
     <button go="intro">Fin</button>
 </div>
-<div id="moon-moon"></div>
 </body>
 
 </html>
