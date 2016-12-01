@@ -4,31 +4,6 @@ $( function() {
 		return Math.floor(Math.random() * (max - min + 1)) + min;
 	}
 
-	class MoonMoon{
-		constructor() {
-			this.elem = $("#moon-moon");
-			this.startRandomBarks();
-		}
-
-		goToDefaultPosition(speed){
-			this.elem.animate({bottom:"-50px"},speed || 1000 );
-		}
-
-		bark(){
-			self = this; //for animate callback
-			$("#moon-moon").animate({bottom:"-100px"},200,function(){
-				self.goToDefaultPosition(200)
-			});
-		}
-
-		startRandomBarks() {
-			self = this; //for animate callback
-			this.bark();
-			setTimeout(function(){
-				self.startRandomBarks()
-			},getRandomInt(5000,10000));
-		}
-	}
 
 	var DEFAULT_LIFE = 3;
 
@@ -37,7 +12,6 @@ $( function() {
 	var status = $("#status");
 	var currentSection = $(".section").first();
 	var actionsHistory = [];
-	var moonMoon = new MoonMoon();
 
 
 	buttons.click( function() {
@@ -99,7 +73,6 @@ $( function() {
 
 
 	$(".section +.section").hide();
-	moonMoon.goToDefaultPosition();
 
 
 } );
