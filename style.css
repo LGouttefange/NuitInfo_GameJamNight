@@ -29,6 +29,10 @@ body {
 	width: 100%;
 }
 
+sprite {
+	display: none;
+}
+
 h2 {
 	margin-top : 0px;
 	font-weight : bold;
@@ -70,6 +74,7 @@ h2 {
 
 .section div:first-of-type {
 	min-height: 50%;
+	text-align: center;
 }
 .section button {
 	display : block;
@@ -91,6 +96,13 @@ h2 {
 	background-color : black;
 }
 
+#sprite {
+	width: 200px;
+	height: auto;
+	left: 70vh;
+	position: fixed;
+}
+
 .battle {
 	padding : 10px 10px;
 	margin : 20px 0px;
@@ -99,4 +111,11 @@ h2 {
 
 .img_src {
 	display: none;
+}
+
+@media only screen and (max-device-width: 480px) {
+
+	.section {
+		font-size: 20px;
+	}
 }
