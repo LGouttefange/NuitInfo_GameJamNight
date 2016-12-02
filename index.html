@@ -18,110 +18,495 @@
 </div>
 
 <div class="section" id="intro">
-    <h2>Epic dungeon of the evil necromancer</h2>
-    En voila un jeu qu'il est bien.
+    <h2> TODO Trouver un nom</h2>
+    TODO Description
 
-    <action name="reset"></action>
-    <sprite>woman</sprite>
-
-    <button go="wakeUp">Commencer l'aventure !</button>
+    <button go="intro2">Commencer l'aventure !</button>
 </div>
 
+<div class="section" id="intro2">
+
+    <div>
+        Bonjour.
+    </div>
+
+    <div>
+        <button go="intro3">...</button>
+    </div>
+
+    <div class="img_src">
+        tree.jpg
+    </div>
+</div>
+
+<div class="section" id="intro3">
+
+    <div>
+      Vous êtes sur le point de vivre une expérience tout à fait courante.
+    </div>
+
+    <div>
+        <button go="intro4">...</button>
+    </div>
+
+    <div class="img_src">
+        tree.jpg
+    </div>
+</div>
+
+<div class="section" id="intro4">
+
+    <div>
+      Une situation qui arrive tous les jours, à des milliers de gens.
+    </div>
+
+    <div>
+        <button go="genre">...</button>
+    </div>
+
+</div>
+
+<div class="section" id="genre">
+
+    <div>
+      Mais d’abord laissez nous apprendre à vous connaitre.
+    </div>
+
+    <div>
+      <!--TODO : set genre-->
+        <button go="intro5">Je suis un homme</button>
+        <button go="intro5">Je suis une femme</button>
+    </div>
+
+</div>
+
+<div class="section" id="intro5">
+
+    <div>
+      Très bien, quel est votre nom ?
+    </div>
+
+    <div>
+      <!--TODO : input nom-->
+      <button go="intro6">...</button>
+    </div>
+
+</div>
+
+  <!-- <garcon> Texte pour le garcon </garcon></  -->
+    <!-- <nom> </nom>  -->
+
+    <div class="section" id="intro6">
+
+        <div>
+          C’est un plutôt joli nom.
+        </div>
+        <!-- TODO : input loveInterest -->
+        <div>
+          <button go="loveInterest">...</button>
+        </div>
+
+        <div class="img_src">
+            tree.jpg
+        </div>
+    </div>
+
+    <div class="section" id="loveInterest">
+
+        <div>
+          Quel est le nom de votre <garcon>amoureuse</garcon><fille>amoureux</fille>
+        </div>
+
+        <div>
+          <button go="endIntro">...</button>
+        </div>
+
+    </div>
+
+    <div class="section" id="endIntro">
+
+        <div>
+          Nous avons tout ce qu’il nous faut, faites bon voyage… <garcon>Mr</garcon><fille>Mme</fille> <nom> </nom>
+        </div>
+
+        <div>
+          <button go="wakeUp">...</button>
+        </div>
+
+    </div>
 
 
 <div class="section" id="wakeUp">
 
     <div>
-        Vous ouvez les yeux... Tout est noir autour de vous...
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda atque blanditiis consectetur delectus dolor
-        doloremque, ducimus expedita ipsa magnam molestiae nesciunt provident sunt tempora tenetur totam velit
-        voluptatem! Sequi, tenetur.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aspernatur atque cum, dolore doloribus eveniet
-        fuga fugiat illum, ipsum iure, maiores molestiae necessitatibus praesentium quisquam repudiandae sequi totam
-        voluptate voluptatem.
+      *VRRRRRRRRR* *VRRRRRRRRR*
+    </div>
+
+    <div>
+        <button go="wakeUp2">...</button>
+    </div>
+
+    <div class="img_src">
+        tree.jpg
+    </div>
+</div>
+
+<div class="section" id="wakeUp2">
+
+    <div>
+      Que décidez-vous ?
+    </div>
+
+    <div>
+        <button go="getUp">Se réveiller maintenant</button>
+        <button go="stayIn">encore 5 minutes …</button>
+    </div>
+
+    <div class="img_src">
+        tree.jpg
+    </div>
+</div>
+
+<div class="section" id="getUp">
+
+    <div>
+      Vous êtes arrivé à l’heure comme d’habitude, vous avez pu suivre vos cours avec entrain mais vous ressentez une légère fatigue.
+    </div>
+
+    <div>
+        <button go="playYbox">...</button>
+    </div>
+
+    <div class="img_src">
+        tree.jpg
+    </div>
+</div>
+
+<div class="section" id="stayIn">
+
+    <div>
+      Vous êtes arrivé en retard ! Vous n’avez pas vu le temps passé et vous êtes fait remarquer ! Mais vous aviez besoin de ce repos.
+    </div>
+
+    <div>
+        <button go="playYbox">...</button>
+    </div>
+
+    <div class="img_src">
+        tree.jpg
+    </div>
+</div>
+
+<div class="section" id="playYbox">
+
+    <div>
+      Terminer ce dernier niveau sur votre YBox n’était pas une si bonne idée …
     </div>
     <div>
-        <button go="cavern">Se relever</button>
+        <button go="Noon">...</button>
     </div>
-    <sprite>woman</sprite>
-    <action name="start"></action>
 
-    <img_src>tree</img_src>
+    <div class="img_src">
+        tree.jpg
+    </div>
 </div>
 
+<div class="section" id="Noon">
 
-<div class="section" id="cavern">
-    Vous êtes dans une caverne sombre. La seule issue semble être
-    une porte à quelques mètres de là.
+    <div>
+      La journée se déroule et le midi arrive, le moment que vous attendiez le plus !
+    </div>
+    <div>
+        <button go="AfterNoon">...</button>
+    </div>
 
-
-    <img_src>tree</img_src>
-    <sprite>woman</sprite>
-    <button go="doorLocked">Sortir</button>
-    <button go="wait">Attendre</button>
-    <button go="examine">Examiner le sol</button>
+    <div class="img_src">
+        tree.jpg
+    </div>
 </div>
 
+<div class="section" id="AfterNoon">
 
-<div class="section" id="examine">
-    Rien de plus que des petits cailloux et de la poussière...
+    <div>
+      Vous êtes gourmand(e) mais c’est surtout pour vous l’occasion de passer du temps avec <loveinterest> </loveInterest> la personne que vous aimez.
+    </div>
+    <div>
+        <button go="Lunch">...</button>
+    </div>
 
-    <button go="doorLocked">Sortir</button>
-    <button go="wait">Attendre</button>
+    <div class="img_src">
+        tree.jpg
+    </div>
 </div>
 
+<div class="section" id="Lunch">
 
-<div class="section" id="wait">
-    Vous attendez quelques minutes, mais rien ne se passe...
-    <button go="wait">Continuer à attendre</button>
-    <button go="hitWall">Se taper la tête contre le mur</button>
-    <button go="doorLocked">Sortir</button>
-    <button go="examine">Examiner le sol</button>
+    <div>
+      Vous ne vous ne sentez pas au meilleur de votre forme,que décidez-vous?
+    </div>
+    <div>
+        <button go="schoolEnd">Vous vous avancez vers <garcon>elle</garcon> <fille>lui</fille> pour lui proposer de manger en votre compagnie…</button>
+        <button go="schoolEnd">Vous n’êtes pas confiant, vous préférez ne pas tenter votre chance ce coup-ci…</button>
+    </div>
+
+    <div class="img_src">
+        tree.jpg
+    </div>
 </div>
 
+<div class="section" id="schoolEnd">
 
-<div class="section" id="hitWall">
-    <p>Aie ! Vous perdez 1 point de vie...</p>
-    <p>Quelque chose tombe du plafond : une clé était cachée dans une
-        faille.</p>
+    <div>
+      Le soir arrive, vous rentrez chez vous après cette rude journée.
+    </div>
+    <div>
+        <button go="niceMom">...</button>
+    </div>
 
-    <action name="hit"></action>
-
-    <button go="exit">Utiliser la clé et ouvrir la porte</button>
+    <div class="img_src">
+        tree.jpg
+    </div>
 </div>
 
+<div class="section" id="niceMom">
 
-<div class="section" id="doorLocked">
-    Malheureusement, une porte en bois bloque le passage. Elle a l'air vraiment solide&nbsp;:
-    peu probable que vous puissiez la défoncer.
-    <button go="hitDoor">Donner un grand coup d'épaule</button>
-    <button go="cavern">Retourner sur vos pas</button>
+    <div>
+      Votre mère vous accueille avec son sourire radieux comme à son habitude, votre père rentrera plus tard.
+    </div>
+    <div>
+        <button go="snack">...</button>
+    </div>
+
+    <div class="img_src">
+        tree.jpg
+    </div>
 </div>
 
+<div class="section" id="snack">
 
-<div class="section" id="hitDoor">
-    BLAM ! La porte n'a pas bougé d'un poil. Par contre, votre épaule, elle, s'est enfoncée de quelques centimètres.
-    Vous perdez 1 point de vie.
+    <div>
+      Vous savourez votre gouter : Des brioches au chocolat.
+    </div>
+    <div>
+        <button go="snack2">...</button>
+    </div>
 
-    <action name="hit"></action>
-    <sprite>woman</sprite>
-
-    <img_src>tree</img_src>
-    <button go="hitDoor">Ré-essayer !</button>
-    <button go="cavern">Retourner sur vos pas</button>
+    <div class="img_src">
+        tree.jpg
+    </div>
 </div>
 
+<div class="section" id="snack2">
 
-<div class="section" id="exit">
-    Vous voyez la lumière du jour... Vous avez réussi à vous échapper !
-    <button go="intro">Fin</button>
+    <div>
+      Vous adorez les brioches au chocolat.
+    </div>
+    <div>
+        <button go="sleep">...</button>
+    </div>
+
+    <div class="img_src">
+        tree.jpg
+    </div>
 </div>
 
+<div class="section" id="sleep">
 
-<div class="section" id="death">
-    Vous êtes mort(e) ! C'est balot.
-    <button go="intro">Fin</button>
+    <div>
+      Après avoir terminé, vous passez devant le salon avant de monter dans votre chambre. En passant vous entendez vaguement le son de la télévision« les forces de … … passées la frontières… » et décidez d’aller vous coucher
+    </div>
+    <div>
+        <button go="2ndwakeUp">...</button>
+    </div>
+
+    <div class="img_src">
+        tree.jpg
+    </div>
 </div>
+
+<div class="section" id="2ndwakeUp">
+
+    <div>
+      Vous vous êtes réveillé à temps ! Victoire ! Cette journée promet d’être une bonne journée !
+    </div>
+    <div>
+        <button go="confessionInc">...</button>
+    </div>
+
+    <div class="img_src">
+        tree.jpg
+    </div>
+</div>
+
+<div class="section" id="confessionInc">
+
+    <div>
+      Vous avez bien dormi et êtes plein de confiance, vous décidez d’aller vous déclarer entre midi et deux … Vous l’apercevez et l’interpellez :
+    </div>
+    <div>
+        <button go="timid">Hey, j’ai un truc à te dire …</button>
+        <button go="confident">Hey <fille>beau gosse</fille><garcon>ma jolie !</garcon></button>
+    </div>
+
+    <div class="img_src">
+        tree.jpg
+    </div>
+</div>
+
+<div class="section" id="timid">
+
+    <div>
+      Malgré votre confiance, vous paraissez timide… le fait qu’elle/il vous suive, un petit sourire aux lèvres, laisse présager d’une bonne suite.
+    </div>
+    <div>
+        <button go="inLove">...</button>
+    </div>
+    <div class="img_src">
+        tree.jpg
+    </div>
+</div>
+
+<div class="section" id="confident">
+
+    <div>
+      On dirait que votre confiance est au plus haut ! Il/Elle parait assez étonné/e mais vous suit tout de même, ça s’annonce bien il faut continuer sur votre lancée !
+    </div>
+    <div>
+        <button go="anxious">...</button>
+    </div>
+
+    <div class="img_src">
+        tree.jpg
+    </div>
+</div>
+
+<div class="section" id="anxious">
+
+    <div>
+      Vous <garcon>la</garcon><fille>le</fille> regardez comme on regarde la personne qu’on aime. Votre corps tremble un peu, que va-t-il/elle vous répondre ? Ce suspens vous ronge de plus en plus …
+    </div>
+    <div>
+        <button go="declaration">...</button>
+    </div>
+
+    <div class="img_src">
+        tree.jpg
+    </div>
+</div>
+
+<div class="section" id="declaration">
+
+    <div>
+      Vous faites le grand saut… vous commencez votre phrase « ça fait longtemps que je suis amo… »
+    </div>
+    <div>
+        <button go="declaration2">...</button>
+    </div>
+
+    <div class="img_src">
+        tree.jpg
+    </div>
+</div>
+
+<div class="section" id="declaration2">
+
+    <div>
+      Vous vous stoppez net.
+    </div>
+    <div>
+        <button go="declaration3">...</button>
+    </div>
+
+    <div class="img_src">
+        tree.jpg
+    </div>
+</div>
+
+<div class="section" id="declaration3">
+
+    <div>
+      <garcon>Elle</garcon><fille>Il</fille> ne vous regarde pas.
+    </div>
+    <div>
+        <button go="declaration4">...</button>
+    </div>
+
+    <div class="img_src">
+        tree.jpg
+    </div>
+</div>
+
+<div class="section" id="declaration4">
+
+    <div>
+      <garcon>Elle</garcon><fille>Il</fille> ne vous entend pas.
+    </div>
+    <div>
+        <button go="shitHappens">...</button>
+    </div>
+
+    <div class="img_src">
+        tree.jpg
+    </div>
+</div>
+
+<div class="section" id="shitHappens">
+
+    <div>
+      Des sortes de cris, des appels ou … des hurlements couvrent votre voix.
+    </div>
+    <div>
+        <button go="shitHappens2">...</button>
+    </div>
+
+    <div class="img_src">
+        tree.jpg
+    </div>
+</div>
+
+<div class="section" id="shitHappens2">
+
+    <div>
+      <garcon>Elle</garcon><fille>Il</fille> semble regarder derrière vous d’un air inquiet. Vous décidez de vous retourner.
+    </div>
+    <div>
+        <button go="shitHappens3">...</button>
+    </div>
+
+    <div class="img_src">
+        tree.jpg
+    </div>
+</div>
+
+<div class="section" id="shitHappens3">
+
+    <div>
+      Vous apercevez des silhouettes au loin à travers la vitre : des dizaines de personnes qui courent vers votre direction.
+    </div>
+    <div>
+        <button go="shitHappens4">...</button>
+    </div>
+
+    <div class="img_src">
+        tree.jpg
+    </div>
+</div>
+
+<div class="section" id="shitHappens4">
+
+    <div>
+      Vous vous retournez brusquement vers votre <garcon>aimée</garcon><fille>aimé</fille>. Vite ! que faites-vous ?
+    </div>
+    <div>
+        <button go="2ndPart">Vous enfuir en bousculant<loveInterest> </loveInterest></button>
+        <button go="2ndPart">Tendre la main et vous enfuir avec <loveInterest> </loveInterest></button>
+    </div>
+
+    <div class="img_src">
+        tree.jpg
+    </div>
+</div>
+
 </body>
 
 </html>
