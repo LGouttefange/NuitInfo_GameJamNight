@@ -39,7 +39,7 @@
 <div class="section" id="intro3">
 
     <div>
-      Vous êtes sur le point de vivre une expérience tout à fait courante.
+        Vous êtes sur le point de vivre une expérience tout à fait courante.
     </div>
 
     <div>
@@ -51,9 +51,9 @@
 <div class="section" id="intro4">
 
     <div>
-      Une situation qui arrive tous les jours, à des milliers de gens.
+        Une situation qui arrive tous les jours, à des milliers de gens.
     </div>
-
+*
     <div>
         <button go="genre">...</button>
     </div>
@@ -63,77 +63,108 @@
 <div class="section" id="genre">
 
     <div>
-      Mais d’abord laissez nous apprendre à vous connaitre.
+        Mais d’abord laissez nous apprendre à vous connaitre.
     </div>
 
     <div>
-      <!--TODO : set genre-->
-        <button go="intro5">Je suis un homme</button>
-        <button go="intro5">Je suis une femme</button>
+        <button go="intro5_male">Je suis un homme</button>
+        <button go="intro5_female">Je suis une femme</button>
     </div>
 
 </div>
 
-<div class="section" id="intro5">
+<div class="section" id="intro5_female">
 
     <div>
-      Très bien, quel est votre nom ?
+        Très bien.
     </div>
-
+    <action name="setGender" data-gender="female"></action>
     <div>
-      <!--TODO : input nom-->
-      <button go="intro6">...</button>
+        <button go="intro6_input">...</button>
     </div>
 
 </div>
 
-  <!-- <garcon> Texte pour le garcon </garcon></  -->
-    <!-- <nom> </nom>  -->
+<div class="section" id="intro5_male">
 
-    <div class="section" id="intro6">
-
-        <div>
-          C’est un plutôt joli nom.
-        </div>
-        <!-- TODO : input loveInterest -->
-        <div>
-          <button go="loveInterest">...</button>
-        </div>
-
-
+    <div>
+        Très bien.
+    </div>
+    <action name="setGender" data-gender="male"></action>
+    <div>
+        <button go="intro6_input">...</button>
     </div>
 
-    <div class="section" id="loveInterest">
+</div>
 
-        <div>
-          Quel est le nom de votre <garcon>amoureuse</garcon><fille>amoureux</fille>
-        </div>
+<div class="section" id="intro6_input">
 
-        <div>
-          <button go="endIntro">...</button>
-        </div>
+    <div>
+        Quel est votre nom ?
+    </div>
+    <div>
 
+        <input type="text" id="input_name">
+    </div>
+    <div>
+        <button go="intro6">...</button>
     </div>
 
-    <div class="section" id="endIntro">
+</div>
 
-        <div>
-          Nous avons tout ce qu’il nous faut, faites bon voyage… <garcon>Mr</garcon><fille>Mme</fille> <nom> </nom>
-        </div>
+<div class="section" id="intro6">
 
-        <div>
-          <button go="wakeUp">...</button>
-        </div>
-
+    <div>
+        C’est un plutôt joli nom,
+        <name></name>
+        .
     </div>
+    <div>
+        <button go="loveInterest">...</button>
+    </div>
+
+
+</div>
+
+<div class="section" id="loveInterest">
+
+    <div>
+        Quel est le nom de votre
+        <garcon>amoureuse</garcon>
+        <fille>amoureux</fille>
+    </div>
+
+    <input type="text" id="input_loveInterest">
+    <div>
+        <button go="endIntro">...</button>
+    </div>
+
+</div>
+
+<div class="section" id="endIntro">
+
+    <div>
+        Nous avons tout ce qu’il nous faut, faites bon voyage…
+        <garcon>Mr</garcon>
+        <fille>Mme</fille>
+        <name></name>
+    </div>
+
+    <div>
+        <button go="wakeUp">...</button>
+    </div>
+
+</div>
 
 
 <div class="section" id="wakeUp">
 
     <div>
-      *VRRRRRRRRR* *VRRRRRRRRR*
+        *VRRRRRRRRR* *VRRRRRRRRR*
     </div>
 
+    <soundfx>alarm_clock</soundfx>
+    <img_src>bed</img_src>
     <div>
         <button go="wakeUp2">...</button>
     </div>
@@ -143,7 +174,7 @@
 <div class="section" id="wakeUp2">
 
     <div>
-      Que décidez-vous ?
+        Que décidez-vous ?
     </div>
 
     <div>
@@ -156,7 +187,8 @@
 <div class="section" id="getUp">
 
     <div>
-      Vous êtes arrivé à l’heure comme d’habitude, vous avez pu suivre vos cours avec entrain mais vous ressentez une légère fatigue.
+        Vous êtes arrivé à l’heure comme d’habitude, vous avez pu suivre vos cours avec entrain mais vous ressentez une
+        légère fatigue.
     </div>
 
     <div>
@@ -169,7 +201,8 @@
 <div class="section" id="stayIn">
 
     <div>
-      Vous êtes arrivé en retard ! Vous n’avez pas vu le temps passé et vous êtes fait remarquer ! Mais vous aviez besoin de ce repos.
+        Vous êtes arrivé en retard ! Vous n’avez pas vu le temps passé et vous êtes fait remarquer ! Mais vous aviez
+        besoin de ce repos.
     </div>
 
     <div>
@@ -184,7 +217,7 @@
 <div class="section" id="playYbox">
 
     <div>
-      Terminer ce dernier niveau sur votre YBox n’était pas une si bonne idée …
+        Terminer ce dernier niveau sur votre YBox n’était pas une si bonne idée …
     </div>
     <div>
         <button go="Noon">...</button>
@@ -197,7 +230,7 @@
 <div class="section" id="Noon">
 
     <div>
-      La journée se déroule et le midi arrive, le moment que vous attendiez le plus !
+        La journée se déroule et le midi arrive, le moment que vous attendiez le plus !
     </div>
     <div>
         <button go="AfterNoon">...</button>
@@ -209,7 +242,9 @@
 <div class="section" id="AfterNoon">
 
     <div>
-      Vous êtes gourmand(e) mais c’est surtout pour vous l’occasion de passer du temps avec <loveinterest> </loveInterest> la personne que vous aimez.
+        Vous êtes gourmand(e) mais c’est surtout pour vous l’occasion de passer du temps avec
+        <loveinterest></loveInterest>
+        la personne que vous aimez.
     </div>
     <div>
         <button go="Lunch">...</button>
@@ -219,10 +254,14 @@
 <div class="section" id="Lunch">
 
     <div>
-      Vous ne vous ne sentez pas au meilleur de votre forme,que décidez-vous?
+        Vous ne vous ne sentez pas au meilleur de votre forme,que décidez-vous?
     </div>
     <div>
-        <button go="schoolEnd">Vous vous avancez vers <garcon>elle</garcon> <fille>lui</fille> pour lui proposer de manger en votre compagnie…</button>
+        <button go="schoolEnd">Vous vous avancez vers
+            <garcon>elle</garcon>
+            <fille>lui</fille>
+            pour lui proposer de manger en votre compagnie…
+        </button>
         <button go="schoolEnd">Vous n’êtes pas confiant, vous préférez ne pas tenter votre chance ce coup-ci…</button>
     </div>
 
@@ -231,7 +270,7 @@
 <div class="section" id="schoolEnd">
 
     <div>
-      Le soir arrive, vous rentrez chez vous après cette rude journée.
+        Le soir arrive, vous rentrez chez vous après cette rude journée.
     </div>
     <div>
         <button go="niceMom">...</button>
@@ -242,7 +281,7 @@
 <div class="section" id="niceMom">
 
     <div>
-      Votre mère vous accueille avec son sourire radieux comme à son habitude, votre père rentrera plus tard.
+        Votre mère vous accueille avec son sourire radieux comme à son habitude, votre père rentrera plus tard.
     </div>
     <div>
         <button go="snack">...</button>
@@ -253,7 +292,7 @@
 <div class="section" id="snack">
 
     <div>
-      Vous savourez votre gouter : Des brioches au chocolat.
+        Vous savourez votre gouter : Des brioches au chocolat.
     </div>
     <div>
         <button go="snack2">...</button>
@@ -264,7 +303,7 @@
 <div class="section" id="snack2">
 
     <div>
-      Vous adorez les brioches au chocolat.
+        Vous adorez les brioches au chocolat.
     </div>
     <div>
         <button go="sleep">...</button>
@@ -275,7 +314,8 @@
 <div class="section" id="sleep">
 
     <div>
-      Après avoir terminé, vous passez devant le salon avant de monter dans votre chambre. En passant vous entendez vaguement le son de la télévision« les forces de … … passées la frontières… » et décidez d’aller vous coucher
+        Après avoir terminé, vous passez devant le salon avant de monter dans votre chambre. En passant vous entendez
+        vaguement le son de la télévision« les forces de … … passées la frontières… » et décidez d’aller vous coucher
     </div>
     <div>
         <button go="2ndwakeUp">...</button>
@@ -286,7 +326,7 @@
 <div class="section" id="2ndwakeUp">
 
     <div>
-      Vous vous êtes réveillé à temps ! Victoire ! Cette journée promet d’être une bonne journée !
+        Vous vous êtes réveillé à temps ! Victoire ! Cette journée promet d’être une bonne journée !
     </div>
     <div>
         <button go="confessionInc">...</button>
@@ -297,11 +337,15 @@
 <div class="section" id="confessionInc">
 
     <div>
-      Vous avez bien dormi et êtes plein de confiance, vous décidez d’aller vous déclarer entre midi et deux … Vous l’apercevez et l’interpellez :
+        Vous avez bien dormi et êtes plein de confiance, vous décidez d’aller vous déclarer entre midi et deux … Vous
+        l’apercevez et l’interpellez :
     </div>
     <div>
         <button go="timid">Hey, j’ai un truc à te dire …</button>
-        <button go="confident">Hey <fille>beau gosse</fille><garcon>ma jolie !</garcon></button>
+        <button go="confident">Hey
+            <fille>beau gosse</fille>
+            <garcon>ma jolie !</garcon>
+        </button>
     </div>
 
 </div>
@@ -309,7 +353,8 @@
 <div class="section" id="timid">
 
     <div>
-      Malgré votre confiance, vous paraissez timide… le fait qu’elle/il vous suive, un petit sourire aux lèvres, laisse présager d’une bonne suite.
+        Malgré votre confiance, vous paraissez timide… le fait qu’elle/il vous suive, un petit sourire aux lèvres,
+        laisse présager d’une bonne suite.
     </div>
     <div>
         <button go="inLove">...</button>
@@ -319,7 +364,8 @@
 <div class="section" id="confident">
 
     <div>
-      On dirait que votre confiance est au plus haut ! Il/Elle parait assez étonné/e mais vous suit tout de même, ça s’annonce bien il faut continuer sur votre lancée !
+        On dirait que votre confiance est au plus haut ! Il/Elle parait assez étonné/e mais vous suit tout de même, ça
+        s’annonce bien il faut continuer sur votre lancée !
     </div>
     <div>
         <button go="anxious">...</button>
@@ -330,7 +376,11 @@
 <div class="section" id="anxious">
 
     <div>
-      Vous <garcon>la</garcon><fille>le</fille> regardez comme on regarde la personne qu’on aime. Votre corps tremble un peu, que va-t-il/elle vous répondre ? Ce suspens vous ronge de plus en plus …
+        Vous
+        <garcon>la</garcon>
+        <fille>le</fille>
+        regardez comme on regarde la personne qu’on aime. Votre corps tremble un peu, que va-t-il/elle vous répondre ?
+        Ce suspens vous ronge de plus en plus …
     </div>
     <div>
         <button go="declaration">...</button>
@@ -341,7 +391,7 @@
 <div class="section" id="declaration">
 
     <div>
-      Vous faites le grand saut… vous commencez votre phrase « ça fait longtemps que je suis amo… »
+        Vous faites le grand saut… vous commencez votre phrase « ça fait longtemps que je suis amo… »
     </div>
     <div>
         <button go="declaration2">...</button>
@@ -352,7 +402,7 @@
 <div class="section" id="declaration2">
 
     <div>
-      Vous vous stoppez net.
+        Vous vous stoppez net.
     </div>
     <div>
         <button go="declaration3">...</button>
@@ -363,7 +413,9 @@
 <div class="section" id="declaration3">
 
     <div>
-      <garcon>Elle</garcon><fille>Il</fille> ne vous regarde pas.
+        <garcon>Elle</garcon>
+        <fille>Il</fille>
+        ne vous regarde pas.
     </div>
     <div>
         <button go="declaration4">...</button>
@@ -374,7 +426,9 @@
 <div class="section" id="declaration4">
 
     <div>
-      <garcon>Elle</garcon><fille>Il</fille> ne vous entend pas.
+        <garcon>Elle</garcon>
+        <fille>Il</fille>
+        ne vous entend pas.
     </div>
     <div>
         <button go="pertubation">...</button>
@@ -385,7 +439,7 @@
 <div class="section" id="pertubation">
 
     <div>
-      Des sortes de cris, des appels ou … des hurlements couvrent votre voix.
+        Des sortes de cris, des appels ou … des hurlements couvrent votre voix.
     </div>
     <div>
         <button go="pertubation2">...</button>
@@ -396,7 +450,9 @@
 <div class="section" id="pertubation2">
 
     <div>
-      <garcon>Elle</garcon><fille>Il</fille> semble regarder derrière vous d’un air inquiet. Vous décidez de vous retourner.
+        <garcon>Elle</garcon>
+        <fille>Il</fille>
+        semble regarder derrière vous d’un air inquiet. Vous décidez de vous retourner.
     </div>
     <div>
         <button go="pertubation3">...</button>
@@ -407,7 +463,8 @@
 <div class="section" id="pertubation3">
 
     <div>
-      Vous apercevez des silhouettes au loin à travers la vitre : des dizaines de personnes qui courent vers votre direction.
+        Vous apercevez des silhouettes au loin à travers la vitre : des dizaines de personnes qui courent vers votre
+        direction.
     </div>
     <div>
         <button go="pertubation4">...</button>
@@ -418,11 +475,18 @@
 <div class="section" id="pertubation4">
 
     <div>
-      Vous vous retournez brusquement vers votre <garcon>aimée</garcon><fille>aimé</fille>. Vite ! que faites-vous ?
+        Vous vous retournez brusquement vers votre
+        <garcon>aimée</garcon>
+        <fille>aimé</fille>
+        . Vite ! que faites-vous ?
     </div>
     <div>
-        <button go="2ndPart">Vous enfuir en bousculant<loveInterest> </loveInterest></button>
-        <button go="2ndPart">Tendre la main et vous enfuir avec <loveInterest> </loveInterest></button>
+        <button go="2ndPart">Vous enfuir en bousculant
+            <loveInterest></loveInterest>
+        </button>
+        <button go="2ndPart">Tendre la main et vous enfuir avec
+            <loveInterest></loveInterest>
+        </button>
     </div>
 
 </div>

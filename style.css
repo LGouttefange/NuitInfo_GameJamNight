@@ -17,11 +17,11 @@ body {
 	background-size: cover;
 	width: 100vw;
 	height: 100vh;
-	-webkit-filter: blur(3px);
-	-moz-filter: blur(3px);
-	-o-filter: blur(3px);
-	-ms-filter: blur(3px);
-	filter: blur(3px);
+	-webkit-filter: blur(5px);
+	-moz-filter: blur(5px);
+	-o-filter: blur(5px);
+	-ms-filter: blur(5px);
+	filter: blur(5px);
 }
 
 #background-image > img {
@@ -112,7 +112,18 @@ h2 {
 img_src {
 	display: none;
 }
+soundfx{
+	display: none;
+}
 
+input {
+	position: relative;
+	display: block;
+	height: 25px;
+	width: 200px;
+	border: 3px solid grey;
+	margin:10px auto;
+}
 @media only screen and (max-device-width: 480px) {
 
 	.section {
