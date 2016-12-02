@@ -36,7 +36,7 @@ $( function() {
 
 
 	function pathOfImage(file_name) {
-		return "img/" + file_name;
+		return "img/" + file_name + ".jpg";
 	}
 
 	function backgroundShouldBeReplaced(file_name) {
@@ -48,7 +48,7 @@ $( function() {
 
 			$("#background-image").find("> img")
 				.fadeOut(800, function () {
-					$(this).attr("src", "img/" + (file_name || "placeholder.png"));
+					$(this).attr("src", pathOfImage(file_name || "placeholder"));
 					$(this).fadeIn(800);
 				})
 
@@ -75,7 +75,7 @@ $( function() {
 		currentSection.hide();
 		currentSection = $("#" + key);
 
-		setBackgroundImage(currentSection.find(".img_src").text().trim());
+		setBackgroundImage(currentSection.find("img_src").text().trim());
 		swapSprites(currentSection.find("sprite").text());
 		currentSection.show();
 		currentSection.find("action").trigger("doAction");
