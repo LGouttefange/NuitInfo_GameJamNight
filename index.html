@@ -2,7 +2,7 @@
 <html>
 <head>
     <script src="jquery.js" type="application/javascript"></script>
-    <script src="game_motor.js" type="application/javascript"></script>
+    <script src="sorcery.js" type="application/javascript"></script>
     <link type="text/css" rel="stylesheet" href="style.css"/>
     <meta lang="fr" xml:lang="fr" content="text/html;charset=UTF-8" http-equiv="Content-Type">
     <title>Refugy Story</title>
@@ -12,7 +12,6 @@
 <div id="background-image">
     <img src="img/placeholder.png" alt="">
 </div>
-<img id="sprite"/>
 <div id="status">
 
 </div>
@@ -22,7 +21,6 @@
     En voila un jeu qu'il est bien.
 
     <action name="reset"></action>
-    <sprite>woman</sprite>
 
     <button go="wakeUp">Commencer l'aventure !</button>
 </div>
@@ -43,7 +41,7 @@
     <div>
         <button go="cavern">Se relever</button>
     </div>
-    <sprite>woman</sprite>
+
     <action name="start"></action>
     <div class="img_src">
         tree.jpg
@@ -58,7 +56,6 @@
     <div class="img_src">
         tree.jpg
     </div>
-    <sprite>woman</sprite>
     <button go="doorLocked">Sortir</button>
     <button go="wait">Attendre</button>
     <button go="examine">Examiner le sol</button>
@@ -106,11 +103,7 @@
     Vous perdez 1 point de vie.
 
     <action name="hit"></action>
-    <sprite>woman</sprite>
 
-    <div class="img_src">
-        tree.jpg
-    </div>
     <button go="hitDoor">Ré-essayer !</button>
     <button go="cavern">Retourner sur vos pas</button>
 </div>
