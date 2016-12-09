@@ -33,9 +33,13 @@ sprite {
 	display: none;
 }
 
+h1{
+	margin-bottom: 0px;
+}
 h2 {
 	margin-top : 0px;
 	font-weight : bold;
+	margin-left: 20px;
 }
 
 #status {
