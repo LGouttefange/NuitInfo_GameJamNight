@@ -19,7 +19,7 @@ $(function () {
     var buttons = $(".section button");
     var status = $("#status");
     var currentSection = $(".section").first();
-    var $characterSprite = $("#sprite");
+    var $characterSprite = $(".sprite");
 
 
     function sectionHasSprite() {
@@ -77,9 +77,9 @@ $(function () {
 
     function setGender() {
         if ($(this).data('gender') === "male")
-            $('fille').hide();
+            $('f').hide();
         else
-            $('garcon').hide();
+            $('m').hide();
 
     }
 
@@ -94,11 +94,16 @@ $(function () {
     function setBackgroundImage(file_name) {
         if (backgroundShouldBeReplaced(file_name)) {
 
-            $("#background-image").find("> img")
-                .fadeOut(800, function () {
-                    $(this).attr("src", pathOfImage(file_name || "placeholder"));
-                    $(this).fadeIn(800);
-                })
+            $top = $("#background-image")
+                .find("> img.top");
+            $bottom = $("#background-image")
+                .find("> img.bottom");
+
+            $top.attr('src', $bottom.attr('src') );
+            $top.show();
+            $bottom.attr("src", pathOfImage(file_name || "placeholder"));
+            $top.fadeOut(500);
+
 
         }
     }
@@ -107,7 +112,6 @@ $(function () {
         var spriteUrl = pathOfSprite(name);
         $characterSprite
             .attr("src", spriteUrl)
-            .css("top", currentSection.position().top - $characterSprite.height())
             .animate({'left': "+=50px", 'opacity': 1}, 300)
 
 

@@ -1,7 +1,7 @@
 body {
 	font-size : 13pt;
 	font-family : "Trebuchet MS", Arial, sans-serif;
-	margin:0;
+	margin:0 3%;
 	height: 100%;
 	width: 100%;
 	position: fixed;
@@ -27,10 +27,20 @@ body {
 #background-image > img {
 	height: 100%;
 	width: 100%;
+	position: fixed;
 }
 
-sprite {
-	display: none;
+#background-image > img.top {
+	z-index: 50;
+}
+
+#sprites{
+}
+#sprites > .sprite {
+	position:relative;
+	bottom:0;
+	max-width: 25%;
+	height: auto;
 }
 
 h1{
@@ -61,13 +71,23 @@ h2 {
 	border-left : none;
 }
 
+#game{
+	width:95vw;
+	height:100vh;
+	margin:auto;
+	position: relative;
+}
+
+body #game {
+	display: table-cell;
+	vertical-align: bottom;
+}
+
 .section {
-	position: fixed;
-	bottom: 50px;
-	left: 5vw;
-	padding : 10px;
-	margin : auto;
-	width: 90vw;
+	width:100%;
+	display: block;
+	position: relative;
+	bottom: 0px;
 	border: 3px solid lightGray;
 	background-color: rgba(255, 255, 255, 0.5);
 	border-radius: 8px;
